@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.tucn.assignment3.Controller.ControllerClient">
+   <children>
+      <HBox prefHeight="280.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="206.0" prefWidth="39.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="206.0" prefWidth="176.0">
+               <children>
+                  <VBox prefHeight="37.0" prefWidth="176.0" />
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#addClient" prefHeight="37.0" prefWidth="130.0" text="Add Client" />
+                  <VBox prefHeight="20.0" prefWidth="176.0" />
+                  <VBox prefHeight="22.0" prefWidth="176.0" />
+                  <Button mnemonicParsing="false" onAction="#removeClient" prefHeight="37.0" prefWidth="130.0" text="Remove Client" />
+               </children>
+            </VBox>
+            <VBox prefHeight="206.0" prefWidth="61.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="206.0" prefWidth="163.0">
+               <children>
+                  <VBox prefHeight="38.0" prefWidth="162.0" />
+                  <Button mnemonicParsing="false" onAction="#editClient" prefHeight="37.0" prefWidth="130.0" text="Edit Client" />
+               </children>
+            </VBox>
+            <VBox prefHeight="206.0" prefWidth="61.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="206.0" prefWidth="176.0">
+               <children>
+                  <VBox prefHeight="37.0" prefWidth="176.0" />
+                  <Button fx:id="productButton" mnemonicParsing="false" onAction="#goToProduct" prefHeight="37.0" prefWidth="150.0" text="Go to &quot;Product&quot; table -&gt;" />
+                  <VBox prefHeight="20.0" prefWidth="176.0" />
+                  <VBox prefHeight="22.0" prefWidth="176.0" />
+                  <Button fx:id="ordersButton" mnemonicParsing="false" onAction="#goToOrders" prefHeight="37.0" prefWidth="150.0" text="Go to &quot;Orders&quot; table -&gt;" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="451.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="379.0" prefWidth="64.0" />
+            <VBox prefHeight="379.0" prefWidth="602.0">
+               <children>
+                  <TableView fx:id="clientTable" fixedCellSize="0.0" prefHeight="343.0" prefWidth="538.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
